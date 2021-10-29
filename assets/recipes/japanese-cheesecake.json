@@ -1,0 +1,478 @@
+{
+    "@context":"https://schema.org",
+    "@graph":[
+       {
+          "@type":"Organization",
+          "@id":"https://www.justonecookbook.com/#organization",
+          "name":"Just One Cookbook",
+          "url":"https://www.justonecookbook.com/",
+          "sameAs":[
+             "https://www.facebook.com/justonecookbook",
+             "https://instagram.com/justonecookbook/",
+             "https://www.youtube.com/user/justonecookbook",
+             "https://www.pinterest.com/justonecookbook/",
+             "https://twitter.com/justonecookbook"
+          ],
+          "logo":{
+             "@type":"ImageObject",
+             "@id":"https://www.justonecookbook.com/#logo",
+             "inLanguage":"en-US",
+             "url":"https://www.justonecookbook.com/wp-content/uploads/2018/11/header.png",
+             "contentUrl":"https://www.justonecookbook.com/wp-content/uploads/2018/11/header.png",
+             "width":1000,
+             "height":125,
+             "caption":"Just One Cookbook"
+          },
+          "image":{
+             "@id":"https://www.justonecookbook.com/#logo"
+          }
+       },
+       {
+          "@type":"WebSite",
+          "@id":"https://www.justonecookbook.com/#website",
+          "url":"https://www.justonecookbook.com/",
+          "name":"Just One Cookbook",
+          "description":"Japanese Food and Recipe Blog",
+          "publisher":{
+             "@id":"https://www.justonecookbook.com/#organization"
+          },
+          "potentialAction":[
+             {
+                "@type":"SearchAction",
+                "target":{
+                   "@type":"EntryPoint",
+                   "urlTemplate":"https://www.justonecookbook.com/?s={search_term_string}"
+                },
+                "query-input":"required name=search_term_string"
+             }
+          ],
+          "inLanguage":"en-US"
+       },
+       {
+          "@type":"ImageObject",
+          "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#primaryimage",
+          "inLanguage":"en-US",
+          "url":"https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I.jpg",
+          "contentUrl":"https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I.jpg",
+          "width":800,
+          "height":533,
+          "caption":"Japanese souffle cheesecake being served on a plate."
+       },
+       {
+          "@type":"WebPage",
+          "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#webpage",
+          "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/",
+          "name":"Japanese Cheesecake \u30b9\u30d5\u30ec\u30c1\u30fc\u30ba\u30b1\u30fc\u30ad \u2022 Just One Cookbook",
+          "isPartOf":{
+             "@id":"https://www.justonecookbook.com/#website"
+          },
+          "primaryImageOfPage":{
+             "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#primaryimage"
+          },
+          "datePublished":"2016-12-12T00:00:43+00:00",
+          "dateModified":"2021-05-27T19:51:33+00:00",
+          "description":"Light and fluffy, Japanese Cheesecake is a delicious gift for a real cheesecake lover.\u00a0 It\u2019s a melt-in-your-mouth combination of creamy cheesecake and airy souffl\u00e9.\u00a0 A second (or more) serving is a guarantee!",
+          "breadcrumb":{
+             "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#breadcrumb"
+          },
+          "inLanguage":"en-US",
+          "potentialAction":[
+             {
+                "@type":"ReadAction",
+                "target":[
+                   "https://www.justonecookbook.com/souffle-japanese-cheesecake/"
+                ]
+             }
+          ]
+       },
+       {
+          "@type":"BreadcrumbList",
+          "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#breadcrumb",
+          "itemListElement":[
+             {
+                "@type":"ListItem",
+                "position":1,
+                "name":"Home",
+                "item":"https://www.justonecookbook.com/"
+             },
+             {
+                "@type":"ListItem",
+                "position":2,
+                "name":"Japanese Cheesecake (Video) \u30b9\u30d5\u30ec\u30c1\u30fc\u30ba\u30b1\u30fc\u30ad"
+             }
+          ]
+       },
+       {
+          "@type":"Article",
+          "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#article",
+          "isPartOf":{
+             "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#webpage"
+          },
+          "author":{
+             "@id":"https://www.justonecookbook.com/#/schema/person/ef8165efbe4bc5e8d01e9fc500902410"
+          },
+          "headline":"Japanese Cheesecake (Video) \u30b9\u30d5\u30ec\u30c1\u30fc\u30ba\u30b1\u30fc\u30ad",
+          "datePublished":"2016-12-12T00:00:43+00:00",
+          "dateModified":"2021-05-27T19:51:33+00:00",
+          "wordCount":3635,
+          "commentCount":836,
+          "publisher":{
+             "@id":"https://www.justonecookbook.com/#organization"
+          },
+          "image":{
+             "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#primaryimage"
+          },
+          "thumbnailUrl":"https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I.jpg",
+          "keywords":[
+             "Cake",
+             "Christmas",
+             "Egg",
+             "Kid-Friendly",
+             "Make Ahead",
+             "Most Popular",
+             "Party Food",
+             "Thanksgiving",
+             "Video"
+          ],
+          "articleSection":[
+             "Dessert"
+          ],
+          "inLanguage":"en-US",
+          "potentialAction":[
+             {
+                "@type":"CommentAction",
+                "name":"Comment",
+                "target":[
+                   "https://www.justonecookbook.com/souffle-japanese-cheesecake/#respond"
+                ]
+             }
+          ]
+       },
+       {
+          "@type":"Person",
+          "@id":"https://www.justonecookbook.com/#/schema/person/ef8165efbe4bc5e8d01e9fc500902410",
+          "name":"Namiko Chen",
+          "description":"I'm Nami, a Japanese home cook based in San Francisco. Have fun exploring the 800+ classic &amp; modern Japanese recipes I share with step-by-step photos and How-To YouTube videos.",
+          "sameAs":[
+             "https://www.justonecookbook.com/about/",
+             "https://www.facebook.com/justonecookbook/",
+             "https://www.instagram.com/justonecookbook/",
+             "https://www.pinterest.com/justonecookbook/",
+             "https://twitter.com/https://twitter.com/justonecookbook",
+             "https://www.youtube.com/user/justonecookbook"
+          ],
+          "url":"https://www.justonecookbook.com/author/administrator/"
+       },
+       {
+          "@context":"http://schema.org/",
+          "@type":"Recipe",
+          "name":"Japanese Cheesecake",
+          "author":{
+             "@type":"Person",
+             "name":"Namiko Chen"
+          },
+          "description":"Light and fluffy, Japanese Cheesecake is a delicious gift for a real cheesecake lover.  It\u2019s a melt-in-your-mouth combination of creamy cheesecake and airy souffl\u00e9.  A second (or more) serving is a guarantee!",
+          "datePublished":"2016-12-11T16:00:43+00:00",
+          "image":[
+             "https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I.jpg",
+             "https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I-500x500.jpg",
+             "https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I-500x375.jpg",
+             "https://www.justonecookbook.com/wp-content/uploads/2019/11/Japanese-Cheesecake-4631-I-480x270.jpg"
+          ],
+          "video":{
+             "name":"How To Make Japanese Cheesecake (Recipe) \u30b9\u30d5\u30ec\u30c1\u30fc\u30ba\u30b1\u30fc\u30ad\u306e\u4f5c\u308a\u65b9\uff08\u30ec\u30b7\u30d4\uff09",
+             "description":"Light and fluffy, Japanese Cheesecake is a delicious gift for a real cheesecake lover.  It's a melt-in-your-mouth combination of creamy cheesecake and airy souffl\u00e9.  A second (or more) serving is a guarantee!\n\nPRINT RECIPE \u25b6 http://bit.ly/JapaneseCheesecake2\n\nPrep tim: 25 mins\nCook time: 85 mins\nServes: one 9\" (23 cm) cake\n \nIngredients\n\n15 g (1 Tbsp.) unsalted butter, for greasing the pan & parchment paper\n6 large eggs (300 g without shell)\n300 g (10.6 oz.) cream cheese\n60 g (4 Tbsp.) unsalted butter\n200 g (200 ml) heavy whipping cream\n60 g (5 Tbsp.) granulated sugar\n80 g (9 Tbsp.) cake flour\nZest from \u00bd lemon\n30 g (2 Tbsp.) lemon juice (about half lemon)\n100 g (8.5 Tbsp.) granulated sugar, for beating egg whites\n2 Tbsp. apricot jam + 2 tsp. hot water, for topping\n\nEquipment You'll Need:\n\n9 inch (23 cm) cake pan (preferably 4 inch tall)\nparchment paper\nmixing bowls\na fine mesh strainer\na whisk\nstand mixer or electric mixer\na large baking sheet\n\n\nInstructions with step-by-step pics \u25b6 http://bit.ly/JapaneseCheesecake2\n\n\n\u2605 FOLLOW JUST ONE COOKBOOK \u2605 \n\uf4fa Please SUBSCRIBE :: http://bit.ly/JOCchannel\n\uf30e My Blog :: http://www.justonecookbook.com\n\uf4d6 My Facebook :: http://facebook.com/justonecookbook\n\uf424 My Twitter :: http://twitter.com/justonecookbook\n\uf4f7 My Instagram :: http://instagram.com/justonecookbook\n\n\n\u2605 INGREDIENTS & COOKING EQUIPMENT \u2605\n\nCUTTING BOARD :: www.cuttingboard.com\n9\" x 4\" CAKE PAN :: http://amzn.to/2gNTSrT\n9\" CIRCLE PARCHMENT PAPER LINER :: http://amzn.to/2graJos\nGLASS BOWL SET :: http://amzn.to/1UpBIZ4\nSILICONE SPATULA :: http://amzn.to/29tEwHZ\nWHISK :: http://amzn.to/1RyWQKY\nFINE MESH STRAINER :: http://amzn.to/2a2fpiz\nMICROPLANE :: http://amzn.to/2gBiMgE\nKNIFE :: http://amzn.to/1RyWLHg\nLEMON SQUEEZER :: http://amzn.to/2gq3iJ9\n1/4 CUP MEASURING CUP :: http://amzn.to/2htcvW1\nBAKING SHEET :: http://amzn.to/1T73Owb\nSTAND MIXER :: http://amzn.to/1VWnbbS\nSILICONE BRUSH :: http://amzn.to/2h3IQi6\n\n\n\u2605 MUSIC \u2605 \n\nMusic courtesy of Audio Network  \n\n\u266b \"Belle Vie\" :: http://bit.ly/2htazwy\n\u266b \"Dearest Edward\" :: http://bit.ly/2he0rHq\n\n\n\u2605 VIDEO EQUIPMENT \u2605\n\nCAMERAS:: http://amzn.to/1QxqBLN\nLENS :: http://amzn.to/1R9psKm & http://amzn.to/2cxjtU0\nVIDEO MIC :: http://amzn.to/1Tmi58m\nCAMERA STAND (similar) :: http://amzn.to/2cA7vOL\nLIGHTS :: http://amzn.to/1I84kEk\nSOFTWARE :: Adobe Premiere",
+             "uploadDate":"2016-12-12T00:41:10+00:00",
+             "duration":"PT8M8S",
+             "thumbnailUrl":"https://i.ytimg.com/vi/Qn_JYHm57D0/hqdefault.jpg",
+             "contentUrl":"https://www.youtube.com/watch?v=Qn_JYHm57D0",
+             "embedUrl":"https://www.youtube.com/embed/Qn_JYHm57D0?feature=oembed",
+             "@type":"VideoObject"
+          },
+          "recipeYield":[
+             "1",
+             "1 9\" (23 cm) cake"
+          ],
+          "prepTime":"PT25M",
+          "cookTime":"PT85M",
+          "totalTime":"PT170M",
+          "recipeIngredient":[
+             "1 Tbsp unsalted butter ((for greasing the pan &amp; parchment paper))",
+             "6  large eggs (50 g each w/o shell) ((10.6 oz, 300 g without shell))",
+             "10.6 oz cream cheese",
+             "4 Tbsp unsalted butter",
+             "\u00be cup heavy (whipping) cream ((\u00be cup + 4 tsp to be precise))",
+             "4 \u00bd Tbsp sugar",
+             "\u2154 cup cake flour",
+             "\u00bd  lemon ((for zest))",
+             "2 Tbsp lemon juice ((about \u00bd large lemon))",
+             "\u00bd cup sugar ((8 Tbsp; for beating egg whites))",
+             "2 Tbsp apricot jam ((for glaze))",
+             "2 tsp hot water ((for glaze))"
+          ],
+          "recipeInstructions":[
+             {
+                "@type":"HowToSection",
+                "name":"Before You Start",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"I shared more detailed info in the post, so please visit the blog post of this recipe.",
+                      "name":"I shared more detailed info in the post, so please visit the blog post of this recipe.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-0-0"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Prepare Cake Pan",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Cut parchment paper for the bottom and side of cake pan. You will need a 9\u201d (23 cm) round paper for the bottom, one 4\u201d x 30\u201d (10 x 76 cm) paper for the side of cake pan, and two 2\u201d x 30\u201d (5 x 76 cm) paper strips which will be used for \u201ctransporting\u201d.",
+                      "name":"Cut parchment paper for the bottom and side of cake pan. You will need a 9\u201d (23 cm) round paper for the bottom, one 4\u201d x 30\u201d (10 x 76 cm) paper for the side of cake pan, and two 2\u201d x 30\u201d (5 x 76 cm) paper strips which will be used for \u201ctransporting\u201d.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-1-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-1.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Grease the cake pan and parchment paper (for bottom and sides) with butter (15 g). You don&#039;t need to use all of it.",
+                      "name":"Grease the cake pan and parchment paper (for bottom and sides) with butter (15 g). You don&#039;t need to use all of it.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-1-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-2.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Place the 2 \u201cstraps\u201d criss-cross on the bottom of the cake pan. Then place the bottom and side parchment paper. The grease side of the 9\u201d (23 cm) paper should face up, and face in on the 4\u201d x 30\u201d (10 x 76 cm) paper.",
+                      "name":"Place the 2 \u201cstraps\u201d criss-cross on the bottom of the cake pan. Then place the bottom and side parchment paper. The grease side of the 9\u201d (23 cm) paper should face up, and face in on the 4\u201d x 30\u201d (10 x 76 cm) paper.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-1-2",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-3.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Preheat the Oven &amp; Gather Ingredients",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Preheat the oven to 350\u00baF (180\u00baC). You will be baking at 320\u00baF (160\u00baC) but when you open the oven to place the cheesecake you\u2019ll lose some heat, so we\u2019ll start off a bit higher.",
+                      "name":"Preheat the oven to 350\u00baF (180\u00baC). You will be baking at 320\u00baF (160\u00baC) but when you open the oven to place the cheesecake you\u2019ll lose some heat, so we\u2019ll start off a bit higher.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-2-0"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Please note that it is very important that ingredients are all measured before starting. Separate the 6 eggs into egg yolks and egg whites. Refrigerate the egg whites.",
+                      "name":"Please note that it is very important that ingredients are all measured before starting. Separate the 6 eggs into egg yolks and egg whites. Refrigerate the egg whites.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-2-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-4.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Mix over Double Boiler",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Set a medium saucepan filled with 2\u201d (5 cm) water and bring to simmer. Add cream cheese (300 g), unsalted butter (60 g), heavy whipping cream (200 ml), and granulated sugar (60 g) in a large bowl. Put the bowl over the saucepan.",
+                      "name":"Set a medium saucepan filled with 2\u201d (5 cm) water and bring to simmer. Add cream cheese (300 g), unsalted butter (60 g), heavy whipping cream (200 ml), and granulated sugar (60 g) in a large bowl. Put the bowl over the saucepan.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-3-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-5.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Using a silicone spatula, mash the cream cheese and butter. Once they are melted, use whisk to blend everything together. Remove from the heat.",
+                      "name":"Using a silicone spatula, mash the cream cheese and butter. Once they are melted, use whisk to blend everything together. Remove from the heat.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-3-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-6.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Mix at the Counter",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"In the warm cream cheese mixture add 6 egg yolks, one yolk at a time while whisking. Make sure each egg yolk blended well with the mixing before adding the next one.",
+                      "name":"In the warm cream cheese mixture add 6 egg yolks, one yolk at a time while whisking. Make sure each egg yolk blended well with the mixing before adding the next one.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-4-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-7.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Using a fine-mesh strainer, sift cake flour (80 g) into the batter. Whisk and blend together.",
+                      "name":"Using a fine-mesh strainer, sift cake flour (80 g) into the batter. Whisk and blend together.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-4-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-8.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Then pass the batter through the same fine mesh strainer to a clean large bowl, creating the silky texture for the batter.",
+                      "name":"Then pass the batter through the same fine mesh strainer to a clean large bowl, creating the silky texture for the batter.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-4-2",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-9.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Zest half of a lemon into the batter. Make sure you only zest the yellow part, not the bitter white part. Then squeeze half lemon into a small bowl. Measure lemon juice (30 ml) and add to the batter. Whisk well to blend and set aside.",
+                      "name":"Zest half of a lemon into the batter. Make sure you only zest the yellow part, not the bitter white part. Then squeeze half lemon into a small bowl. Measure lemon juice (30 ml) and add to the batter. Whisk well to blend and set aside.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-4-3",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-10.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Set Up Bain-Marie",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Put the baking sheet inside the oven and pour hot water until half way or 1 inch deep. Close the oven.",
+                      "name":"Put the baking sheet inside the oven and pour hot water until half way or 1 inch deep. Close the oven.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-5-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-11.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Beat Egg Whites",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Add cold egg whites into a large clean mixing bowl (of the stand mixer). Make sure there is no oil or water in the bowl. If you have space in your refrigerator, I highly recommend keeping the mixing bowl cold until you\u2019re ready to use it. Start whisking on medium speed (speed 4) until the egg whites become opaque, foamy, and bubbly, about 2 minutes. Then slowly add 100 g granulated sugar, \u2153 portion at a time while the mixer runs.",
+                      "name":"Add cold egg whites into a large clean mixing bowl (of the stand mixer). Make sure there is no oil or water in the bowl. If you have space in your refrigerator, I highly recommend keeping the mixing bowl cold until you\u2019re ready to use it. Start whisking on medium speed (speed 4) until the egg whites become opaque, foamy, and bubbly, about 2 minutes. Then slowly add 100 g granulated sugar, \u2153 portion at a time while the mixer runs.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-6-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-12.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Once all the sugar has been added, increase the mixer speed to high (speed 8-9) and beat the egg whites until \u201csoft\u201d to \u201cmedium\u201d peaks. When lift the whisk, the egg whites shouldn\u2019t fold ribbons (drizzle) anymore. When you turn your whisk upside down, the egg whites should cling to the whisk and hold their shape for a few seconds, but then start to flop over.",
+                      "name":"Once all the sugar has been added, increase the mixer speed to high (speed 8-9) and beat the egg whites until \u201csoft\u201d to \u201cmedium\u201d peaks. When lift the whisk, the egg whites shouldn\u2019t fold ribbons (drizzle) anymore. When you turn your whisk upside down, the egg whites should cling to the whisk and hold their shape for a few seconds, but then start to flop over.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-6-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-13.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Fold in Egg Whites",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Using a whisk, mix in \u2153 of egg whites into the cream cheese mixture until incorporated. Then gently fold in another \u2153 into the mixture.",
+                      "name":"Using a whisk, mix in \u2153 of egg whites into the cream cheese mixture until incorporated. Then gently fold in another \u2153 into the mixture.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-7-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-14.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Lastly, pour the mixture back into the mixer bowl (with \u2153 of egg whites still in it) and fold in very gently.",
+                      "name":"Lastly, pour the mixture back into the mixer bowl (with \u2153 of egg whites still in it) and fold in very gently.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-7-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-15.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Pour the mixture into the baking pan in all at once, avoiding air pockets while pouring. Tap the cake pan a few times on the kitchen counter to release any air pockets in the batter.",
+                      "name":"Pour the mixture into the baking pan in all at once, avoiding air pockets while pouring. Tap the cake pan a few times on the kitchen counter to release any air pockets in the batter.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-7-2",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-16.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Bake the Cheesecake",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Place the cake pan into the baking sheet that\u2019s already in the oven. Reduce the oven temperature to 320\u00baF (160\u00baC) and start baking for 70-75 minutes. Then, reduce the oven temperature to 300\u00baF (150\u00baC) and bake for another 10 minutes, or until the top is golden brown and the skewer inserted comes out clean. For a convection oven, reduce cooking temperature by 25\u00baF (15\u00baC).",
+                      "name":"Place the cake pan into the baking sheet that\u2019s already in the oven. Reduce the oven temperature to 320\u00baF (160\u00baC) and start baking for 70-75 minutes. Then, reduce the oven temperature to 300\u00baF (150\u00baC) and bake for another 10 minutes, or until the top is golden brown and the skewer inserted comes out clean. For a convection oven, reduce cooking temperature by 25\u00baF (15\u00baC).",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-8-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-17.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"Let Cool",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"Turn off the oven and leave the oven door ajar for 15-20 minutes with the cake inside. If you take the cake out immediately, the sudden change of temperature could cause the cake to shrink or collapse. You want the cake to slowly shrink down to half the height, roughly from 4 inches to 2 inches. Remove the pan from the oven. Gently pull out the cake using the 2 parchment paper straps (with another set of hand).",
+                      "name":"Turn off the oven and leave the oven door ajar for 15-20 minutes with the cake inside. If you take the cake out immediately, the sudden change of temperature could cause the cake to shrink or collapse. You want the cake to slowly shrink down to half the height, roughly from 4 inches to 2 inches. Remove the pan from the oven. Gently pull out the cake using the 2 parchment paper straps (with another set of hand).",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-9-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-18.jpg"
+                   },
+                   {
+                      "@type":"HowToStep",
+                      "text":"Remove the parchment paper around the cake (leave the bottom one). Combine apricot jam (2 Tbsp) and hot water (2 tsp) in a small bowl. Brush the apricot mixture over the top of the cheesecake. Let cool to room temperature.",
+                      "name":"Remove the parchment paper around the cake (leave the bottom one). Combine apricot jam (2 Tbsp) and hot water (2 tsp) in a small bowl. Brush the apricot mixture over the top of the cheesecake. Let cool to room temperature.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-9-1",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake-19.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"To Serve",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"You can serve the cake at room temperature (fluffiest!) or chill the cake for 1-2 hours before serving.",
+                      "name":"You can serve the cake at room temperature (fluffiest!) or chill the cake for 1-2 hours before serving.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-10-0",
+                      "image":"https://www.justonecookbook.com/wp-content/uploads/2016/12/Japanese-Cheesecake.jpg"
+                   }
+                ]
+             },
+             {
+                "@type":"HowToSection",
+                "name":"To Store",
+                "itemListElement":[
+                   {
+                      "@type":"HowToStep",
+                      "text":"You can store the cake in the refrigerator for up to 3-4 days or in the freezer for 3-4 weeks. Defrost the cake overnight in the refrigerator. The cold cheesecake is dense, so leave it at the counter till chilled/room temperature before serving.",
+                      "name":"You can store the cake in the refrigerator for up to 3-4 days or in the freezer for 3-4 weeks. Defrost the cake overnight in the refrigerator. The cold cheesecake is dense, so leave it at the counter till chilled/room temperature before serving.",
+                      "url":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#wprm-recipe-56472-step-11-0"
+                   }
+                ]
+             }
+          ],
+          "aggregateRating":{
+             "@type":"AggregateRating",
+             "ratingValue":"4.4",
+             "ratingCount":"672"
+          },
+          "recipeCategory":[
+             "Dessert"
+          ],
+          "recipeCuisine":[
+             "Japanese"
+          ],
+          "keywords":"cheesecake, souffle",
+          "nutrition":{
+             "@type":"NutritionInformation",
+             "servingSize":"9 inch cake",
+             "calories":"3560 kcal",
+             "carbohydrateContent":"266 g",
+             "proteinContent":"70 g",
+             "fatContent":"252 g",
+             "saturatedFatContent":"142 g",
+             "transFatContent":"2 g",
+             "cholesterolContent":"1838 mg",
+             "sodiumContent":"1488 mg",
+             "fiberContent":"3 g",
+             "sugarContent":"189 g"
+          },
+          "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#recipe",
+          "isPartOf":{
+             "@id":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#article"
+          },
+          "mainEntityOfPage":"https://www.justonecookbook.com/souffle-japanese-cheesecake/#webpage"
+       }
+    ]
+ }

@@ -104,7 +104,7 @@ class RecipeCard extends HTMLElement {
     this.shadow.appendChild(styleElem);         //append styles to shadow dom
 
     //debug purposes
-    console.log(data);
+    //console.log(data);
 
     // Part 1 Expose - TODO
 
@@ -117,7 +117,7 @@ class RecipeCard extends HTMLElement {
     let recipeTitle = document.createElement('p');
     let linkAnchor = document.createElement('a');
     linkAnchor.href = getUrl(data);                                 //helper function
-    linkAnchor.textContent = searchForKey(data,'headline');      
+    linkAnchor.textContent = searchForKey(data, 'headline');
     recipeTitle.appendChild(linkAnchor);                            //attach link to title
     recipeTitle.setAttribute('class', 'title');                     //set class to title just like in template
     card.appendChild(recipeTitle);                                  //append title to card

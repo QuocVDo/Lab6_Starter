@@ -5,7 +5,10 @@
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  '/assets/recipes/japanese-cheesecake.json',
+  '/assets/recipes/orange-chicken.json',
+  '/assets/recipes/mongolian-beef.json'
 ];
 
 // Once all of the recipes that were specified above have been fetched, their
@@ -74,11 +77,21 @@ function createRecipeCards() {
   // show any others you've added when the user clicks on the "Show more" button.
 
   // Part 1 Expose - TODO
+
+  /* Old version for expose
   for (const url in recipeData) {
     
     const recipeCard = document.createElement('recipe-card');
     recipeCard.data = recipeData[url];
 
+    document.querySelector('main').appendChild(recipeCard);
+  }
+  */
+
+  //display only first three recipes at first
+  for (let i = 0; i < 3; i++) {
+    const recipeCard = document.createElement('recipe-card');
+    recipeCard.data = recipeData[recipes[i]];
     document.querySelector('main').appendChild(recipeCard);
   }
 
@@ -93,4 +106,39 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  const showMore = document.querySelector('button');
+  showMore.addEventListener('click', buttonClick);
+}
+
+//Event Listener when button clicked
+function buttonClick() {
+
+  const button = document.querySelector('button');
+  
+  //If it currently says "show more" change it to say "show less"
+  //display rest of the recipes
+  if(button.textContent == "Show more") {
+    button.textContent = "Show less";
+
+    //display rest of the recipes
+    for (let i = 3; i < 6; i++) {
+      const recipeCard = document.createElement('recipe-card');
+      recipeCard.data = recipeData[recipes[i]];
+      document.querySelector('main').appendChild(recipeCard);
+    }  
+  }
+
+  //If button currently says "show less", change it to say "show more"
+  //Remove the displayed recipes
+  else if(button.textContent == "Show less") {
+    button.textContent = "Show more";
+
+    //remove last three recipes added
+    const mainElement = document.querySelector('main');
+    for(let i = 0; i < 3; i++) {
+      mainElement.removeChild(mainElement.lastElementChild);
+    }
+  }
+  
+
 }

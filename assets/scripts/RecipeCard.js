@@ -1,8 +1,10 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
+    super();
 
     // You'll want to attach the shadow DOM here
+    this.shadow = this.attachShadow({mode: 'open'});
   }
 
   set data(data) {
@@ -98,8 +100,67 @@ class RecipeCard extends HTMLElement {
 
     // Make sure to attach your root element and styles to the shadow DOM you
     // created in the constructor()
+    this.shadow.appendChild(card);              //append root element to shadow dom
+    this.shadow.appendChild(styleElem);         //append styles to shadow dom
+
+    //debug purposes
+    console.log(data);
 
     // Part 1 Expose - TODO
+
+    //create image and append it to card.
+    const recipeImage = document.createElement('img');
+    recipeImage.src = 'https://joyfoodsunshine.com/wp-content/uploads/2018/02/best-chocolate-chip-cookies-recipe-1.jpg';
+    card.appendChild(recipeImage);
+
+    //create Title and append it to card.
+    let recipeTitle = document.createElement('p');
+    let linkAnchor = document.createElement('a');
+    linkAnchor.href = getUrl(data);               //helper function DOESNT WORK :(
+    linkAnchor.textContent = 'A fancy title';
+    recipeTitle.appendChild(linkAnchor);          //attach link to title
+    recipeTitle.setAttribute('class', 'title');   //set class to title just like in template
+    card.appendChild(recipeTitle);                //append title to card
+
+    //create Organization and append it to card.
+    let org = document.createElement('p');
+    org.textContent = "A Fun Organization";
+    org.setAttribute('class', 'organization');    //set class to organization
+    card.appendChild(org);                        //append org to card.
+
+    //create rating and append it to card.
+    let rating = document.createElement('div');
+    let ratingSpan1 = document.createElement('span');
+    let ratingImage = document.createElement('img');
+    let ratingSpan2 = document.createElement('span');
+    ratingSpan1.textContent = '5';
+    ratingSpan2.textContent = '(100)';
+    ratingImage.src = "/assets/images/icons/5-star.svg";
+    rating.setAttribute('class','rating');           
+    rating.appendChild(ratingSpan1);
+    rating.appendChild(ratingImage);
+    rating.appendChild(ratingSpan2);
+    card.appendChild(rating);                    //append rating to card.
+
+
+    //create time and append it to card.
+    let time = document.createElement('time');
+    time.textContent = '1 hour';
+    card.appendChild(time);                     //append tiem to card;
+
+    //create ingredients and append  it to card.
+    let ingredients = document.createElement('p');
+    ingredients.textContent = 'Water, Sugar, Pain';
+    ingredients.setAttribute('class', 'ingredients');
+    card.appendChild(ingredients);
+    
+
+
+
+
+
+
+
   }
 }
 

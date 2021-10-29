@@ -48,17 +48,14 @@ async function fetchRecipes() {
 
       //fetch recipe at index i in recipes array.
       fetch(recipes[i])
-        .then(response => {
+        .then(response => response.json())
+        .then(data => {
+          recipeData[recipes[i]] = data;
 
-          //store the response JSOn in recipeData. The [key,value] pair is the [url, object]
-          recipeData[recipes[i]] = response.json();
-          
-          
-          //once recipeData has all the json opbjects then we can resolve.
-          if(Object.keys(recipeData).length == recipes.length) {
+           //once recipeData has all the json opbjects then we can resolve.
+           if(Object.keys(recipeData).length == recipes.length) {
             resolve(true);
           }
-
         })
         .catch(error => {
           reject(false);

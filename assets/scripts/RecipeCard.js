@@ -110,47 +110,91 @@ class RecipeCard extends HTMLElement {
 
     //create image and append it to card.
     const recipeImage = document.createElement('img');
-    recipeImage.src = 'https://joyfoodsunshine.com/wp-content/uploads/2018/02/best-chocolate-chip-cookies-recipe-1.jpg';
+    recipeImage.src = getImageUrl(data);
     card.appendChild(recipeImage);
 
     //create Title and append it to card.
     let recipeTitle = document.createElement('p');
     let linkAnchor = document.createElement('a');
-    linkAnchor.href = getUrl(data);               //helper function DOESNT WORK :(
-    linkAnchor.textContent = 'A fancy title';
-    recipeTitle.appendChild(linkAnchor);          //attach link to title
-    recipeTitle.setAttribute('class', 'title');   //set class to title just like in template
-    card.appendChild(recipeTitle);                //append title to card
+    linkAnchor.href = getUrl(data);                                 //helper function
+    linkAnchor.textContent = searchForKey(data,'headline');      
+    recipeTitle.appendChild(linkAnchor);                            //attach link to title
+    recipeTitle.setAttribute('class', 'title');                     //set class to title just like in template
+    card.appendChild(recipeTitle);                                  //append title to card
 
     //create Organization and append it to card.
     let org = document.createElement('p');
-    org.textContent = "A Fun Organization";
-    org.setAttribute('class', 'organization');    //set class to organization
-    card.appendChild(org);                        //append org to card.
+    org.textContent = getOrganization(data);
+    org.setAttribute('class', 'organization');                      //set class to organization
+    card.appendChild(org);                                          //append org to card.
 
     //create rating and append it to card.
     let rating = document.createElement('div');
     let ratingSpan1 = document.createElement('span');
     let ratingImage = document.createElement('img');
     let ratingSpan2 = document.createElement('span');
-    ratingSpan1.textContent = '5';
-    ratingSpan2.textContent = '(100)';
-    ratingImage.src = "/assets/images/icons/5-star.svg";
-    rating.setAttribute('class','rating');           
-    rating.appendChild(ratingSpan1);
-    rating.appendChild(ratingImage);
-    rating.appendChild(ratingSpan2);
-    card.appendChild(rating);                    //append rating to card.
+
+    //set up the rating and images.
+    let ratingValue =  searchForKey(data, 'ratingValue');
+     
+    //if there are no reviews then we just say "No  Reviews"
+    if(ratingValue == '' || ratingValue == null) {
+      ratingSpan1.textContent =  'No Reviews'
+      rating.appendChild(ratingSpan1);
+      rating.setAttribute('class', 'rating');
+      card.appendChild(rating);
+    }
+
+    //else we append the spand with the correct rating values.
+    else {
+      ratingSpan1.textContent = ratingValue;
+      ratingSpan2.textContent = '(' + searchForKey(data, 'ratingCount') + ')';
+      
+      //switch statement that selects the correct star image to use
+      switch(Math.round(ratingValue)) {
+        case 0:
+          ratingImage.src = "/assets/images/icons/0-star.svg";
+          break;
+        
+        case 1:
+          ratingImage.src = "/assets/images/icons/1-star.svg";
+          break;
+
+        case 2:
+          ratingImage.src = "/assets/images/icons/2-star.svg";
+          break;
+
+        case 3:
+          ratingImage.src = "/assets/images/icons/3-star.svg";
+          break;
+
+        case 4:
+          ratingImage.src = "/assets/images/icons/4-star.svg";
+          break;
+        
+        case 5:
+          ratingImage.src = "/assets/images/icons/5-star.svg";
+          break;
+      }
+
+      //set up the class attributes and connnect the DOM  together.
+      rating.setAttribute('class','rating');           
+      rating.appendChild(ratingSpan1);
+      rating.appendChild(ratingImage);
+      rating.appendChild(ratingSpan2);
+      card.appendChild(rating);                    
+    }
+                     
 
 
     //create time and append it to card.
     let time = document.createElement('time');
-    time.textContent = '1 hour';
-    card.appendChild(time);                     //append tiem to card;
+    time.textContent = convertTime(searchForKey(data,'totalTime'));          
+    card.appendChild(time);                     
 
     //create ingredients and append  it to card.
     let ingredients = document.createElement('p');
-    ingredients.textContent = 'Water, Sugar, Pain';
+    ingredients.textContent = createIngredientList(searchForKey(data, 'recipeIngredient'));
     ingredients.setAttribute('class', 'ingredients');
     card.appendChild(ingredients);
     
@@ -192,6 +236,8 @@ function searchForKey(object, key) {
   return value;
 }
 
+
+
 /**
  * Extract the URL from the given recipe schema JSON object
  * @param {Object} data Raw recipe JSON to find the URL of
@@ -206,6 +252,19 @@ function getUrl(data) {
   };
   return null;
 }
+
+//modification of getURl that gets the image url instead.
+function getImageUrl(data) {
+  if (data.image) return data.image.url;
+  if (data['@graph']) {
+    for (let i = 0; i < data['@graph'].length; i++) {
+      if (data['@graph'][i]['@type'] == 'ImageObject') return data['@graph'][i]['url'];
+    }
+  };
+  return null;
+}
+
+
 
 /**
  * Similar to getUrl(), this function extracts the organizations name from the

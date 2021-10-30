@@ -153,27 +153,27 @@ class RecipeCard extends HTMLElement {
       //switch statement that selects the correct star image to use
       switch(Math.round(ratingValue)) {
         case 0:
-          ratingImage.src = "/assets/images/icons/0-star.svg";
+          ratingImage.src = "assets/images/icons/0-star.svg";
           break;
         
         case 1:
-          ratingImage.src = "/assets/images/icons/1-star.svg";
+          ratingImage.src = "assets/images/icons/1-star.svg";
           break;
 
         case 2:
-          ratingImage.src = "/assets/images/icons/2-star.svg";
+          ratingImage.src = "assets/images/icons/2-star.svg";
           break;
 
         case 3:
-          ratingImage.src = "/assets/images/icons/3-star.svg";
+          ratingImage.src = "assets/images/icons/3-star.svg";
           break;
 
         case 4:
-          ratingImage.src = "/assets/images/icons/4-star.svg";
+          ratingImage.src = "assets/images/icons/4-star.svg";
           break;
         
         case 5:
-          ratingImage.src = "/assets/images/icons/5-star.svg";
+          ratingImage.src = "assets/images/icons/5-star.svg";
           break;
       }
 
